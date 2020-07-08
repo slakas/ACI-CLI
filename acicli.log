@@ -1,0 +1,51 @@
+[92m     08/07/2020 10:47:20 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 10:47:20 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 10:47:38 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 10:47:38 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 10:47:45 AM   INFO:[428:acicli:do_show]:  show interface[0m
+[92m     08/07/2020 10:47:45 AM   INFO:[477:acicli:do_show]:  search_interface_by_description DBD[0m
+[92m     08/07/2020 10:47:49 AM   INFO:[428:acicli:do_show]:  show interface[0m
+[92m     08/07/2020 10:47:49 AM   INFO:[477:acicli:do_show]:  search_interface_by_description BDB[0m
+[92m     08/07/2020 10:47:54 AM   INFO:[428:acicli:do_show]:  show interface[0m
+[92m     08/07/2020 10:47:54 AM   INFO:[482:acicli:do_show]:  search_interface_by_description_online BDB[0m
+[92m     08/07/2020 10:48:01 AM   INFO:[586:interfaces:show_interface_description]:  Szukam description dla noda 102.[0m
+[92m     08/07/2020 10:48:06 AM   INFO:[586:interfaces:show_interface_description]:  Szukam description dla noda 101.[0m
+[92m     08/07/2020 10:52:09 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 10:52:09 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 10:52:19 AM   INFO:[357:acicli:do_show]:  show cdp[0m
+[92m     08/07/2020 10:52:19 AM   INFO:[367:acicli:do_show]:  show cdpneighbours[0m
+[92m     08/07/2020 10:52:19 AM   INFO:[368:acicli:do_show]:  sh_cdp[0m
+[92m     08/07/2020 10:52:19 AM   INFO:[42:neigbours:cdp]:  node_concrete_cdp[0m
+[92m     08/07/2020 10:52:19 AM   INFO:[27:neigbours:get_nodes_object]:  get nodes[0m
+[92m     08/07/2020 11:39:05 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 11:39:05 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 11:39:17 AM   INFO:[357:acicli:do_show]:  show cdp[0m
+[92m     08/07/2020 11:39:17 AM   INFO:[367:acicli:do_show]:  show cdpneighbours[0m
+[92m     08/07/2020 11:39:17 AM   INFO:[368:acicli:do_show]:  sh_cdp[0m
+[92m     08/07/2020 11:39:17 AM   INFO:[42:neigbours:cdp]:  node_concrete_cdp[0m
+[92m     08/07/2020 11:39:17 AM   INFO:[27:neigbours:get_nodes_object]:  get nodes[0m
+[92m     08/07/2020 11:40:01 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 11:40:01 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 11:40:05 AM   INFO:[378:acicli:do_show]:  show lldp[0m
+[92m     08/07/2020 11:40:05 AM   INFO:[387:acicli:do_show]:  show lldpneighbours[0m
+[92m     08/07/2020 11:40:05 AM   INFO:[71:neigbours:lldp]:  node_concrete_lldp[0m
+[92m     08/07/2020 11:40:05 AM   INFO:[27:neigbours:get_nodes_object]:  get nodes[0m
+[92m     08/07/2020 11:41:25 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 11:41:25 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 11:41:32 AM   INFO:[259:acicli:do_show]:  show port-channel[0m
+[92m     08/07/2020 11:41:37 AM   INFO:[259:acicli:do_show]:  show port-channel[0m
+[92m     08/07/2020 11:41:37 AM   INFO:[269:acicli:do_show]:  show port-channelsummaryleaf101[0m
+[92m     08/07/2020 11:41:37 AM   INFO:[821:interfaces:show_summary]:  Node 101 intf_id None[0m
+[92m     08/07/2020 11:43:13 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 11:43:13 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 11:43:22 AM   INFO:[259:acicli:do_show]:  show port-channel[0m
+[92m     08/07/2020 11:43:22 AM   INFO:[269:acicli:do_show]:  show port-channelsummaryleaf101[0m
+[92m     08/07/2020 11:43:22 AM   INFO:[821:interfaces:show_summary]:  Node 101 intf_id None[0m
+[92m     08/07/2020 11:44:38 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 11:44:38 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 11:44:47 AM   INFO:[259:acicli:do_show]:  show port-channel[0m
+[92m     08/07/2020 11:44:47 AM   INFO:[269:acicli:do_show]:  show port-channelsummaryleaf101[0m
+[92m     08/07/2020 11:44:47 AM   INFO:[821:interfaces:show_summary]:  Node 101 intf_id None[0m
+[92m     08/07/2020 11:46:20 AM   INFO:[1139:acicli:<module>]:  [94mPróba połączenia do https://sandboxapicdc.cisco.com użytkownik: admin[0m
+[92m     08/07/2020 11:46:20 AM   INFO:[674:acisession:login]:  Initializing connection to the APIC[0m
+[92m     08/07/2020 11:46:29 AM   INFO:[190:acicli:do_show]:  show inventory[0m
