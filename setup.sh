@@ -5,7 +5,15 @@ USER='acicli'
 
 useradd $USER
 echo $USER:$USER"123"| chpasswd
+# make home dir
+mkhomedir_helper acicli
 echo "user $USER added successfully!"
+
+#run acicli after login
+echo 'acicli' >> /home/acicli/.bashrc
+echo 'exit' >> /home/acicli/.bashrc
+
+
 
 #setup shellinabox
 mv /etc/default/shellinabox /etc/default/shellinabox.old
@@ -16,26 +24,10 @@ echo 'SHELLINABOX_ARGS="--no-beep"' >> /etc/default/shellinabox
 
 cd /var/lib/shellinabox
 #Genarte self-signed cert
-#Required
-domain='com'
-commonname='acicli'
-
-#Change to your company details
-country=PL
-state=Mazowieckie
-locality=Warsaw
-organization=acicli.net
-organizationalunit=IT
-email=admin@acicli.net
-
-#Optional
-password=aciclipassword
-
-echo "Generating key request for $domain"
-
-#Generate a key
-openssl req -x509 -newkey rsa:4096 -keyout certificate.pem -out certificate.pem -days 365 -nodes -noout \
-    -subj "/C=$country/ST=$state/L=$locality/O=$organization/OU=$organizationalunit/CN=$commonname/emailAddress=$email"
+openssl req -new -x509 -days 365 -nodes \
+  -out /var/lib/shellinabox/certificate.pem \
+  -keyout /var/lib/shellinabox/certificate.pem \
+  -subj "/C=PL/ST=Mazowieckie/L=Warsaw/O=IT/CN=www.example.pl"
 
 
 #restart web shell
