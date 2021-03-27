@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #create acicli user
-USER='test2'
+USER='acicli'
 
 useradd $USER
 echo $USER:$USER"123"| chpasswd
@@ -11,7 +11,7 @@ echo "user $USER added successfully!"
 mv /etc/default/shellinabox /etc/default/shellinabox.old
 echo 'SHELLINABOX_DAEMON_START=1' >> /etc/default/shellinabox
 echo 'SHELLINABOX_PORT=443' >> /etc/default/shellinabox
-echo 'SHELLINABOX_USER=acicli' >> /etc/default/shellinabox
+echo "SHELLINABOX_USER=$USER" >> /etc/default/shellinabox
 echo 'SHELLINABOX_ARGS="--no-beep"' >> /etc/default/shellinabox
 
 #restart web shell
