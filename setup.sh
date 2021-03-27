@@ -33,4 +33,5 @@ openssl req -new -x509 -days 365 -nodes \
 #restart web shell
 service shellinabox stop
 service shellinabox start
+echo 'service shellinabox start' >> /root/.bashrc
 
