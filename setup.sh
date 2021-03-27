@@ -34,15 +34,7 @@ password=aciclipassword
 echo "Generating key request for $domain"
 
 #Generate a key
-openssl genrsa -des3 -passout pass:$password -out $domain.key 2048 -noout
-
-#Remove passphrase from the key. Comment the line out to keep the passphrase
-echo "Removing passphrase from key"
-openssl rsa -in $domain.key -passin pass:$password -out $domain.key
-
-#Create the request
-echo "Creating CSR"
-openssl req -new -key $domain.key -out $domain.csr -passin pass:$password \
+openssl req -x509 -newkey rsa:4096 -keyout certificate.pem -out certificate.pem -days 365 -nodes -noout \
     -subj "/C=$country/ST=$state/L=$locality/O=$organization/OU=$organizationalunit/CN=$commonname/emailAddress=$email"
 
 
